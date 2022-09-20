@@ -1,39 +1,131 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
     <head>
-        <title>First Strike</title>
         <style>
-            base{
+            h1{
                 background-color: black;
                 color: white;
                 text-align: center;
+                padding: 15px;
+            }
+            canto{
+                background-color: black;
+                color: #f1f1f1;
+                text-align: left;
                 padding: 10px;
             }
-        </style>
-    </head>
-    <body>
-        <h1>Entrada base</h1>
-        <base>
-        Muita coisa<br>
-        Para explicar</base>
-        <br><br><br>
-        <a href="https://twitch.tv/radsrei" title="Twitch.tv/Radsrei">Acesse o canal da Twitch e deixa o sub</a>
-    
-        <style>
-            a:link, a:visited {
-              background-color: #030741;
-              color: white;
-              padding: 10px 10px;
-              text-align: center;
-              text-decoration: none;
-              display: inline-block;
+            anuncio{
+                background-color: darkgreen;
+                color: deeppink;
+                text-align: right;
+                position: relative;
+                padding: 5px;
+                float: right;
+                width: 5%;
             }
-            
-            a:hover, a:active {
-              background-color:rgb(114, 7, 7);
+            aula{
+                background-color: rgb(204, 197, 197);
+                color: rgb(14, 14, 202);
+                text-align: center;
+                padding: 12px;
             }
-        </style>
+            nav {
+                float: left;
+                width: 25%;
+                height: 250px; /* only for demonstration, should be removed */
+                background: #ccc;
+                padding: 20px;
+            }
 
-    
-    </body>
+                /* Style the list inside the menu */
+            nav ul {
+                list-style-type: none;
+                padding: 0;
+            }
+            article {
+                float: left;
+                padding: 20px;
+                width: 65%;
+                background-color: #f1f1f1;
+                height: 250px; /* only for demonstration, should be removed */
+            }
+            nav, article {
+            width: 97%;
+            height: auto;
+        }
+        </style>
+        <title>Classificados do PB</title>
+        <meta charset="utf-8"></meta>
+    </head>
+    <!-- Fazer pagina de Classificados -->
+    <!-- venda e compra de carros, imóveis, ofertas de empregos, previsão de tempo, etc. -->
+    <body>
+        <button onclick="document.location='https://www.climatempo.com.br/'" target="_blank">Seja redirecionado ao site do clima</button><br><br><br>
+        <section>
+        <nav>
+            <aula>Acesse nosso menu</aula>
+            <ul>
+                <li><a href="#carros">Carros</a></li>
+                <li><a href="#casa">Casas</a></li>
+                <li><a href="#emprego">Emprego</a></li>
+                <!-- <li><a href="#about"></a></li> -->
+            </ul>
+        </nav>
+        <article>
+        <h1>Principais destaques</h1>
+        <!-- <anuncio>Ganhe 500 reais ao clicar no link a baixo</anuncio>  -->
+        <a id="Carros"></a>
+        <h2>Carros</h2>
+        <img src="https://www.pastorecc.com.br/site/photos/cars/2033/bg_ZllqECJYoDK1SEFoQC84.jpeg" alt="Imagem" width="240" height="240">
+        <img src="https://www.pastorecc.com.br/site/photos/cars/2033/bg_sTIGiBhouBFSFP3uhmq8.jpeg" alt="Imagem" width="240" height="240">
+        <img src="https://www.pastorecc.com.br/site/photos/cars/2033/bg_8NDj31GxrsCfs7sxeJEf.jpeg" alt="Imagem" width="240" height="240">
+        <img src="https://www.pastorecc.com.br/site/photos/cars/2033/bg_6VFxq3DzjdmXWujp0LqT.jpeg" alt="Imagem" width="240" height="240">
+        <h3>
+            <ul>
+                <li>Ano: 1974</li>
+                <li>Cor: Bege</li>
+                <li>KM rodado: 30 mil km</li>
+                <li>Gasolina</li>
+                <LI>Banco de Couro</LI>
+            </ul>
+        </h3>
+        <hr>
+        <a id="casa"></a>
+        <h2>Casas</h2>
+        <img src="https://imagem-123projetei.com/ecommerce/commercialProjects/C-118/images/project_C-118_image_predio_comercial_.jpg" Alt="Imagem" width="360" height="360">
+        <img src="https://imagem-123projetei.com/ecommerce/commercialProjects/C-118/images/project_C-118_image_detalhes_do_predio.jpg" Alt="Imagem" width="360" height="360">
+        <img src="https://imagem-123projetei.com/ecommerce/commercialProjects/C-118/images/project_C-118_image_fachada_secundaria.jpg" Alt="Imagem" width="360" height="360">
+        
+        <h3>
+            <ul>
+                <li>Apartamento Mobiliado</li>
+                <li>A 15 minutos do Centro</li>
+                <li>Duas Vagas de garagem</li>
+                <li>85m<sup>2</sup></li>
+            </ul>
+        </h3>
+        <hr>
+        <a id="emprego"></a>
+        <h2>Emprego</h2>
+        <img src="https://www.vozdascomunidades.com.br/wp-content/uploads/elementor/thumbs/vagas-de-emprego-opw9ni3nirved3g5qhs9et60j46hbq8xbmdfyrbfyg.jpg" Alt="Imagem" width="480" height="240">
+        <h3>Clique no link a baixo e seja direcionado a vaga.</h3><br>
+        <a href="https://ciser.gupy.io/" target="_blank">Acesse nossas Vagas</a><br>
+        <h3>Clique no outro link para baixar os requisitos para a vaga.</h3>
+        <a href="Requisitos.pdf" download="Requisitos.pdf" target="_blank">Requisitos da vaga</a>
+        <h3>
+            <ul>
+                <li>Salário acima do Mercado</li>
+                <li>Entrada flexivel</li>
+                <li>Multiplos beneficios</li>
+                <h2><li><mark>Ultimas Vagas</mark></li></h2>
+            </ul>
+        </h3>
+        </article>
+    </section>
+        <hr>
+        
+        
+
+        
+  </body>
 </html>
